@@ -2,25 +2,141 @@
 <html>
 <head>
 	
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	
 	<title>CÁLCULO DE IDH</title>
+	<meta charset="utf-8">
 </head>
-<body>
-	<script src="funcoes.js"></script>
-<div>
-	<form>
-			<label><h1>CÁLCULO DE IDH</h1></label><br>
-			<label><h2> &nbsp Digite o número de átomos de carbonos</h2></label>
-		  	<input id="text1" class="text1" type="Number"><br>
-		  	<label><h2> &nbsp Digite o número de átomos monovalentes</h2></label>
-		  	<input id="text2" class="text2" type="Number"><br>
-		  	<label><h2> &nbsp Digite o número de átomos trivalente</h2></label>
-		  	<input id="text3" class="text2" type="Number"><br>
-		  	<label><h3 id="nome"></h3><h3 id="resultado"></h3></label>	 	
-   </form>
-<button id="soma"  class="button" onclick="calculo2()"> Calcular IDH</button>
+<div style="height: 60em;">
+<body style=" top: 0; margin:0; padding: 0; background: linear-gradient(to bottom, #33ccff 0%, #00cc99 78%); ">
+	<style type="text/css">
+		#topo{
+	margin:0 auto;
+	padding:0;
+		height: auto;
+		width: 100%;
+}	
+#topo img{
+	max-width:100%;
+	height:auto;
+}
+	body, html{
+
+		margin:0;
+		padding:0;
+		
+	}
+	#container{
+		font-family:arial;
+		/* Largura máxima */
+		max-width:813px;
+		/* Alinha ao centro */
+		margin:0 auto;
+		
+		overflow:hidden;
+	}
+	#content{
+		/* Largura */
+		width:73%;
+		/* Alinha à esquerda */
+		float:left;
+	}
+	.content_inner{
+		padding:10px;
+	}
+	#sidebar{
+		/* Largura */
+		width:27%;
+		/* Alinha à direita */
+		float:right;
+		background:#ccc;
+
+	}
+	#rodapé{
+		clear: both;
+		margin: 0;
+		padding:0;
+		padding-bottom: 0px;
+		background-color: black;
+		height: 80px;
+		width: 100%;
+		position: fixed;
+	}
+	#content img, #sidebar img{
+	max-width:100%;
+	height:auto;
+}
+/*Acima a estrutura do site*/
+
+.button {
+	width: 800px;
+	height: 100px;
+    
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+	border: solid;
+	border-radius: 40px;
+	background-color:#19336B;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    margin-bottom:40px;
+    font-family: helvetica;
+}
+.buttonBrev {
+	width: 800px; 
+	height: 100px;
+   
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    font-family: helvetica;
+	border: solid;
+	 border-radius: 40px;
+	background-color:#19336B;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    margin-bottom:40px;
+}
+.buttonBrev:hover {
+    background-color:red; 
+    color: white;
+}
+.button:hover {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+	</style>
+<div id="container">
+	<div id="content">
+		<div class="content_inner">
+			<header>
+			<div id="divTop">
+				<center><table >
+					<tr>
+							<td style="color: #19336B; font-size: 36px; text-align: center; width: 800px; height: 120px;">
+							SELECIONE UMA OPÇÃO DISPONÍVEL</td>
+					</tr>
+
+					<tr><td><a href="CalculadoraIDH.html"><button class="button">Cálculo de IDH</button></a></td></tr>
+					<tr><td><a ><button class="buttonBrev">Cálculo de PH (em breve)</button></a></td></tr>
+					<tr><td><a ><button class="buttonBrev">Cálculo de pKa (em breve)</button></a></td></tr>
+				</table></center>
+			</div>
+			</header>
+		</div>
+	</div>
+	
 
 </div>
-
 </body>
+	<div id="rodapé">
+		Desenvolvido por Felipe Santiago
+	</div>
 </html>
